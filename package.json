@@ -1,6 +1,14 @@
 {
   "dependencies": {
-    "http-server": "^14.1.1",
+    "@capacitor/android": "4.4.0",
+    "@capacitor/app": "4.1.0",
+    "@capacitor/core": "4.4.0",
+    "@capacitor/haptics": "4.0.1",
+    "@capacitor/keyboard": "4.0.1",
+    "@capacitor/status-bar": "4.0.1",
     "phaser": "^3.55.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "4.4.0"
   }
 }
