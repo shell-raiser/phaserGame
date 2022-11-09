@@ -5,10 +5,32 @@
     "@capacitor/core": "4.4.0",
     "@capacitor/haptics": "4.0.1",
     "@capacitor/keyboard": "4.0.1",
-    "@capacitor/status-bar": "4.0.1",
-    "phaser": "^3.55.2"
+    "@capacitor/status-bar": "4.0.1"
   },
   "devDependencies": {
     "@capacitor/cli": "4.4.0"
-  }
+  },
+  "name": "phasergame",
+  "version": "1.0.0",
+  "description": "A javascript game, made with Phaser JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ionic:build": "echo 'Build Placebo' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shell-raiser/phaserGame.git"
+  },
+  "keywords": [
+    "game",
+    "phaserjs",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shell-raiser/phaserGame/issues"
+  },
+  "homepage": "https://github.com/shell-raiser/phaserGame#readme"
 }

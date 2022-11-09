@@ -1,6 +1,6 @@
 {
-  "appId": "com.unnamed",
-  "appName": "unnamed",
-  "webDir": "www",
+  "appId": "com.phasergame",
+  "appName": "phasergame",
+  "webDir": "dist",
   "bundledWebRuntime": false
 }
