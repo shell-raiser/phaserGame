@@ -26,8 +26,8 @@
             // key: 'playScene',
             // create: createPlayScene,
             initialize: function playSceneConfig() {
-                    Phaser.Scene.call(this, { key: 'playScene' });
-                },
+                Phaser.Scene.call(this, { key: 'playScene' });
+            },
             preload: function () {
                 this.load.image('sky', 'newAssets/sky.png');
                 this.load.image('ground', 'newAssets/platform.png');
@@ -62,7 +62,8 @@
 
                 // The player and its settings
                 player = this.physics.add.sprite(100, 450, 'dude');
-
+                this.cameras.main.setBounds(0, 0, window.innerWidth);
+                this.cameras.main.startFollow(player);
                 //  Player physics properties. Give the little guy a slight bounce.
                 // player.setBounce(1);
                 player.setCollideWorldBounds(true);
@@ -310,7 +311,8 @@
 
             // The player and its settings
             player = this.physics.add.sprite(100, 450, 'dude');
-
+            // this.cameras.main.setBounds(0, 0, window.innerWidth);
+            // this.cameras.main.startFollow(player);
             //  Player physics properties. Give the little guy a slight bounce.
             player.setBounce(1);
             player.setCollideWorldBounds(true);
