@@ -25,8 +25,7 @@
             Extends: Phaser.Scene,
             // key: 'playScene',
             // create: createPlayScene,
-            initialize:
-                function playSceneConfig() {
+            initialize: function playSceneConfig() {
                     Phaser.Scene.call(this, { key: 'playScene' });
                 },
             preload: function () {
@@ -39,7 +38,7 @@
             },
             create: function () {
                 //  A simple background for our game
-                this.add.image(400, 300, 'sky');
+                this.add.tileSprite(0, 0, window.innerWidth, window.innerHeight, 'sky').setOrigin(0);
                 //  The platforms group contains the ground and the 2 ledges we can jump on
                 platforms = this.physics.add.staticGroup();
 
@@ -150,7 +149,7 @@
                 if (gameOver) {
                     return;
                 }
-                if (player.body.touching.down){
+                if (player.body.touching.down) {
                     player.setVelocityY(-330);
                 }
 
@@ -279,7 +278,7 @@
         // console.log(groundLevel)
         function create2() {
             //  A simple background for our game
-            this.add.image(400, 300, 'sky');
+            this.add.tileSprite(0, 0, window.innerWidth, window.innerHeight, 'sky').setOrigin(0);
             //  The platforms group contains the ground and the 2 ledges we can jump on
             platforms = this.physics.add.staticGroup();
 
@@ -290,7 +289,7 @@
             platforms.create(400, groundLevel, 'ground').setOrigin(0, 0)
             platforms.create(800, groundLevel, 'ground').setOrigin(0, 0)
             platforms.create(1200, groundLevel, 'ground').setOrigin(0, 0)
-            const playButton = this.add.text( window.innerWidth/2, window.innerHeight/2,'Play Game', { fill: '#89190b' });
+            const playButton = this.add.text(window.innerWidth / 2, window.innerHeight / 2, 'Play Game', { fill: '#89190b' });
             playButton.setInteractive();
 
             playButton.on('pointerover', () => enterButtonHoverState());
