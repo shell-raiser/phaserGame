@@ -290,7 +290,7 @@
             platforms.create(400, groundLevel, 'ground').setOrigin(0, 0)
             platforms.create(800, groundLevel, 'ground').setOrigin(0, 0)
             platforms.create(1200, groundLevel, 'ground').setOrigin(0, 0)
-            const playButton = this.add.text(100, 100, 'Play Game', { fill: '#89190b' });
+            const playButton = this.add.text( window.innerWidth/2, window.innerHeight/2,'Play Game', { fill: '#89190b' });
             playButton.setInteractive();
 
             playButton.on('pointerover', () => enterButtonHoverState());
@@ -313,7 +313,7 @@
             player = this.physics.add.sprite(100, 450, 'dude');
 
             //  Player physics properties. Give the little guy a slight bounce.
-            // player.setBounce(1);
+            player.setBounce(1);
             player.setCollideWorldBounds(true);
 
             //  Our player animations, turning, walking left and walking right.
