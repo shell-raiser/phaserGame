@@ -1,6 +1,6 @@
 {
   "appId": "com.phasergame",
   "appName": "phasergame",
-  "webDir": "dist",
+  "webDir": "src",
   "bundledWebRuntime": false
 }
