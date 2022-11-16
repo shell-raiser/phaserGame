@@ -290,14 +290,13 @@
             //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
             // platforms.create(400, 568, 'ground').setScale(2).refreshBody();
             for (i = 0; i < (window.innerWidth / 400); i++) {
-                console.log("platform created")
                 platforms.create(i * 400, groundLevel, 'ground').setOrigin(0, 0)
             }
 
             // platforms.create(400, groundLevel, 'ground').setOrigin(0, 0)
             // platforms.create(800, groundLevel, 'ground').setOrigin(0, 0)
             // platforms.create(1200, groundLevel, 'ground').setOrigin(0, 0)
-            const playButton = this.add.text(window.innerWidth / 2, window.innerHeight / 2, 'Play Game', { fill: '#89190b' });
+            const playButton = this.add.text(window.innerWidth / 2, window.innerHeight / 2, 'Play Game', { fill: '#89190b', fontSize: '20px' });
             playButton.setInteractive();
 
             playButton.on('pointerover', () => enterButtonHoverState());
